@@ -12,7 +12,7 @@ protocol ___VARIABLE_sceneName___ViewRouter{
 //    func presentExample(leaguesId:Int)
 }
 
-class ___VARIABLE_sceneName___RouterImplemetation {
+class ___VARIABLE_sceneName___RouterImplemetation : ___VARIABLE_sceneName___ViewRouter{
     
     // MARK: Injections
     weak var viewController: UIViewController?

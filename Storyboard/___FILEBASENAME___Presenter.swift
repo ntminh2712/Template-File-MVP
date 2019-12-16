@@ -21,20 +21,17 @@ protocol ___VARIABLE_sceneName___Presenter {
 class ___VARIABLE_sceneName___PresenterImplementation: ___VARIABLE_sceneName___Presenter {
     
     //MARK: Injections
-    private weak var output: ___VARIABLE_sceneName___PresenterOutput?
-    var router: ___VARIABLE_sceneName___Routable
+    private var view: ___VARIABLE_sceneName___View?
+    var router: ___VARIABLE_sceneName___ViewRouter
 //    var Gateway: Gateway?
     //MARK: LifeCycle
-    init(output: ___VARIABLE_sceneName___PresenterOutput,
-         router: ___VARIABLE_sceneName___Routable) {
-        
-        self.output = output
-        self.router = router
-    }
-    init(view: ___VARIABLE_sceneName___View, router: ___VARIABLE_sceneName___ViewRouter, exploreGateway: ___VARIABLE_sceneName___Gateway) {
+
+    init(view: ___VARIABLE_sceneName___View, router: ___VARIABLE_sceneName___ViewRouter) {
         self.view = view
         self.router = router
-        self.exploreGateway = exploreGateway
+    }
+    func viewDidLoad(){
+        
     }
     
     func presentExample(leaguesId: Int){

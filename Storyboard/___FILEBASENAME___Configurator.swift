@@ -19,10 +19,7 @@ class ___VARIABLE_sceneName___Configurator: ___VARIABLE_sceneName___Configurable
     
         let router = ___VARIABLE_sceneName___RouterImplemetation(viewController: viewController)
 //        let exploreGateway = ApiExploreGatewayImplementation()
-        let presenter = ___VARIABLE_sceneName___PresenterImplementation(
-            view: viewController,
-            router: router
-        )
+        let presenter = ___VARIABLE_sceneName___PresenterImplementation(view:viewController,router: router)
         
         viewController.presenter = presenter
 

@@ -14,7 +14,7 @@ class ___VARIABLE_sceneName___ViewController: BaseViewController, ___VARIABLE_sc
     
     // MARK: Injections
     var presenter: ___VARIABLE_sceneName___Presenter!
-    var configurator: ___VARIABLE_sceneName___Configuration = ___VARIABLE_sceneName___ConfigurationImplementation()
+    var configurator: ___VARIABLE_sceneName___Configurable = ___VARIABLE_sceneName___Configurator()
 
     // MARK: View lifeCycle
     override func viewDidLoad() {
@@ -23,7 +23,9 @@ class ___VARIABLE_sceneName___ViewController: BaseViewController, ___VARIABLE_sc
         presenter.viewDidLoad()
         
     }
-
+    func handleError(title: String, content: String) {
+        
+    }
 }
 
 // MARK: - ___VARIABLE_sceneName___PresenterOutput
