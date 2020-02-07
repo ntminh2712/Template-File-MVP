@@ -23,7 +23,6 @@ class ___VARIABLE_sceneName___PresenterImplementation: ___VARIABLE_sceneName___P
     //MARK: Injections
     private var view: ___VARIABLE_sceneName___View?
     var router: ___VARIABLE_sceneName___ViewRouter
-//    var Gateway: Gateway?
     //MARK: LifeCycle
 
     init(view: ___VARIABLE_sceneName___View, router: ___VARIABLE_sceneName___ViewRouter) {
@@ -33,10 +32,7 @@ class ___VARIABLE_sceneName___PresenterImplementation: ___VARIABLE_sceneName___P
     func viewDidLoad(){
         
     }
-    
-    func presentExample(leaguesId: Int){
-//        self.router.presentLeaguesDetail(leaguesId: leaguesId)
-    }
+
 }
 
 // MARK: - ___VARIABLE_sceneName___PresenterInput
